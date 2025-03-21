@@ -23,7 +23,7 @@ public class Oven_Maker_20250321 {
 //				System.out.print(A + " " + B);
 //			}
 //		}
-
+		//인터넷을 보며 새롭게 습득한 방법
 		// 현재 시간과 조리 시간을 합친 후, 그 값이 60분 이상이면 시간도 더해야 함
 		int totalMinutes = B + C; // 현재 분과 조리 시간을 더한 값
 
