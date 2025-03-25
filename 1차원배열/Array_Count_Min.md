@@ -2,6 +2,7 @@
 ### Q. 수열에서 입력값보다 작은값 출력하기
 <br>
 
+#### A. Scanner 사용하기
 ```java
 import java.util.Scanner;
 
@@ -29,3 +30,6 @@ public class Array_count_min_20250325 {
 }
 
 ```
+
+<br>
+
