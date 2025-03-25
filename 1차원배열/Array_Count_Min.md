@@ -33,3 +33,38 @@ public class Array_count_min_20250325 {
 
 <br>
 
+#### A. Buffered 사용하기
+```java
+import java.io.*;
+
+public class Array_count_min_20250325 {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        // 첫 번째 줄에서 N과 X를 공백으로 구분하여 읽고 바로 변수에 할당
+        String[] input = br.readLine().split(" ");
+        int N = Integer.parseInt(input[0]);
+        int X = Integer.parseInt(input[1]);
+
+        // 두 번째 줄에서 수열 원소들을 공백으로 구분하여 읽음
+        String[] numbers = br.readLine().split(" ");
+
+        // 수열의 각 원소를 하나씩 비교하여 출력
+        for (int i = 0; i < N; i++) {
+            int num = Integer.parseInt(numbers[i]);
+            if (num < X) {
+                bw.write(num + " ");
+            }
+        }
+
+        // 버퍼 비우고 자원 해제
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+}
+
+```
+
