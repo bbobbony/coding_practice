@@ -79,7 +79,7 @@ public class Max_and_Min_20250326 {
 ```java
 import java.util.Scanner;
 
-public class MinWithIntegerMaxValue {
+public class Max_and_Min_20250326  {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -103,6 +103,20 @@ public class MinWithIntegerMaxValue {
 ```
 
 <br>
+
+### ✅자바 내장형 함수와 상수 차이점 및 장단점
+
+| **특징**               | **Math.max()**                          | **Integer.MAX_VALUE**                  |
+|----------------------|--------------------------------------------------|------------------------------------------------|
+| 목적              | 두 값 중 큰 값을 구하기 위해 사용               | 정수형의 최소값을 설정하여, 값을 비교하여 최소값을 구하기 위해 사용 |
+| 사용 메소드       | `Math.max()` (두 값 중 더 큰 값 반환)            | `Integer.MAX_VALUE` (정수형 최대값을 상수로 사용) |
+| 사용 시점        | 주로 **최댓값**을 구할 때 사용                   | 주로 **최솟값**을 구할 때 사용                |
+| 초기값 설정      | 배열의 첫 번째 값으로 초기화                    | `Integer.MAX_VALUE`로 초기화                  |
+| 기능             | 비교 연산을 통해 **최댓값**을 찾음              | `Math.min()`과 결합하여 **최솟값**을 찾음     |
+| 장점             | 간단하고 직관적, 두 값 비교만으로 최댓값을 찾을 수 있음 | `Integer.MAX_VALUE`로 초기값을 설정해 최솟값을 찾는 데 유용 |
+| 단점             | **최솟값**을 찾을 때는 `Math.min()`이 필요함    | **최댓값**을 찾을 때 별도의 비교 연산이 필요함 |
+
+
 
 
 
