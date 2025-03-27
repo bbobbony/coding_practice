@@ -73,5 +73,13 @@ public class Main {
     }
 }
 ```
+<br>
+
+### ✅ Split( )와 StringTokenizer 차이
+### -> 둘다 문자열을 특정 구분자로 나누는 기능을 한다.
+
+
+
+<br>
 
 
