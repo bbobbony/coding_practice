@@ -78,6 +78,14 @@ public class Main {
 ### ✅ Split( )와 StringTokenizer 차이
 ### -> 둘다 문자열을 특정 구분자로 나누는 기능을 한다.
 
+<br>
+
+|비교항목|split(" ")|StringTokenizer|
+|-------|-------|-------|
+|반환값|String[] (배열로 반환)|하나씩 토큰을 가져옴|
+|성능|느림|빠름|
+|반복처리 ( 유동적인 사용 가능 )|for 또는 foreach|while반복문 사용| 
+|구분자가 없을 경우|빈 배열 반환|예외 발생 가능|
 
 
 <br>
