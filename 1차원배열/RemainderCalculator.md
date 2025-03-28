@@ -36,3 +36,36 @@ public class RemainderCalculator {
 }
 
 ```
+
+<br>
+
+#### A. HashSet<> 자료구조 사용하기
+```java
+import java.util.Scanner;
+import java.util.HashSet; // Set을 사용하기 위해 import문 추가하기
+
+public class RemainderCalculator {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[10];
+        HashSet<Integer> remainders = new HashSet<>(); // 나머지를 저장할 Set
+
+        // 배열에 입력값 받기
+        for (int i = 0; i < 10; i++) {
+            arr[i] = sc.nextInt(); // 입력값 배열에 넣기
+        }
+
+        // 나머지를 Set에 저장하면서 중복을 자동으로 제거
+        for (int i = 0; i < 10; i++) {
+            int remainder = arr[i] % 42; // 나머지 계산
+            remainders.add(remainder); // Set에 나머지 추가
+        }
+
+        // Set의 크기가 서로 다른 나머지 개수
+        System.out.println(remainders.size()); // 중복을 제거한 후 개수 출력하기
+    }
+}
+
+```
