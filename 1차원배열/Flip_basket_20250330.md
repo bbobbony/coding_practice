@@ -47,3 +47,11 @@ public class Flip_Basket_20250330 {
 }
 
 ```
+
+### ✅ 만약 i<=j라는 조건이 없다면?
+### => if (i > j) { //i가 j보다 큰경우엔 강제로 i와 j값을 바꾸어 계산하기!!
+###     int temp = i;
+###     i = j;
+###     j = temp;
+}
+
